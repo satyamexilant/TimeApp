@@ -7,6 +7,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="LoginWindow" customModule="TimeApp" customModuleProvider="target">
             <connections>
+                <outlet property="indicator" destination="ACu-0C-Goa" id="knx-eX-Yyy"/>
                 <outlet property="loginButton" destination="12d-1e-xGG" id="BTi-yg-WHe"/>
                 <outlet property="password" destination="RBy-T1-Rg8" id="gKM-bs-Q1S"/>
                 <outlet property="userName" destination="88q-kV-qgO" id="tIb-dQ-3W0"/>
@@ -85,6 +86,9 @@
                             <action selector="forgotPassword:" target="-2" id="YjV-oc-dR5"/>
                         </connections>
                     </button>
+                    <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" displayedWhenStopped="NO" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="ACu-0C-Goa">
+                        <rect key="frame" x="185" y="11" width="16" height="16"/>
+                    </progressIndicator>
                 </subviews>
             </view>
             <connections>

@@ -15,6 +15,8 @@ class LoginWindow: NSWindowController
     @IBOutlet var userName: NSTextField!
     @IBOutlet var password: NSSecureTextField!
     @IBOutlet var loginButton: NSButton!
+    @IBOutlet var indicator: NSProgressIndicator!
+    
     
     let createLoginButtonTag = 0
     let loginButtonTag = 1
@@ -70,7 +72,8 @@ class LoginWindow: NSWindowController
     
     @IBAction func login(sender: NSButton)
     {
-        if sender.tag == loginButtonTag        {
+        if sender.tag == loginButtonTag
+        {
             
             if (userName.stringValue == "" || password.stringValue == "")
             {
@@ -83,11 +86,19 @@ class LoginWindow: NSWindowController
             
             if checkLogin(userName.stringValue, password: password.stringValue)
             {
-                let alert = NSAlert()
-                alert.messageText = "Success"
-                alert.informativeText = "Successfully Login"
-                alert.runModal()
+                
+                
+                indicator.startAnimation(true)
+                
+                sleep(2)
+                
+//                let alert = NSAlert()
+//                alert.messageText = "Success"
+//                alert.informativeText = "Successfully Login"
+//                alert.runModal()
+                
                 password.stringValue = ""
+                
                 self.window?.close()
                 let time = TimeSheetWindow(windowNibName: "TimeSheetWindow")
                 time.showWindow(self)
