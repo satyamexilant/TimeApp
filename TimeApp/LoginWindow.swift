@@ -85,7 +85,7 @@ class LoginWindow: NSWindowController
         print("\(numberresult)")
         
         
-        let specialCharacterRegEx  = ".*[!&^%$#@()/]+.*"
+        _  = ".*[!&^%$#@()/]+.*"
         let texttest2 = NSPredicate(format:"SELF MATCHES %@", numberRegEx)
         
         let specialresult = texttest2.evaluateWithObject(text)
@@ -164,14 +164,11 @@ class LoginWindow: NSWindowController
                     NSUserDefaults.standardUserDefaults().setObject(userName.stringValue, forKey: "username")
                 }
                 
-                // let alert = NSAlert()
-//                alert.messageText =
-            
                 
-                let defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
-                defaults.setObject(userName.stringValue, forKey: "username")
-                defaults.setObject(password.stringValue, forKey: "password")
-                
+//                let defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+//                defaults.setObject(userName.stringValue, forKey: "username")
+//                defaults.setObject(password.stringValue, forKey: "password")
+//                
                 
                 NSUserDefaults.standardUserDefaults().setBool(true, forKey: "hasPassword")
                 NSUserDefaults.standardUserDefaults().synchronize()
@@ -202,6 +199,7 @@ class LoginWindow: NSWindowController
                         alert.messageText = "Password weak"
                         alert.informativeText = "Password should be of minimum 6 characters. Enter atleast one Uppercase letter , One digit and One special character"
                         alert.runModal()
+                        password.stringValue = ""
                 }
                 
             }
