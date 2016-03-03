@@ -133,16 +133,20 @@ class LoginWindow: NSWindowController
                 {
                     NSUserDefaults.standardUserDefaults().setObject(userName.stringValue, forKey: "username")
                 }
-
-//                let defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
-//                defaults.setObject(userName.stringValue, forKey: "username")
-//                defaults.setObject(password.stringValue, forKey: "password")
+                
+                // let alert = NSAlert()
+//                alert.messageText =
                 
                 
-                NSUserDefaults.standardUserDefaults().setBool(true, forKey: "hasPassword")
-                NSUserDefaults.standardUserDefaults().synchronize()
+                let defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+                defaults.setObject(userName.stringValue, forKey: "username")
+                defaults.setObject(password.stringValue, forKey: "password")
                 
-                keyChain.set(password.stringValue, forKey: Keychain_keyName)
+                
+//                NSUserDefaults.standardUserDefaults().setBool(true, forKey: "hasPassword")
+//                NSUserDefaults.standardUserDefaults().synchronize()
+                
+                //keyChain.set(password.stringValue, forKey: Keychain_keyName)
 
                 let alert = NSAlert()
                 alert.messageText = "Success"
