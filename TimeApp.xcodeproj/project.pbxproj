@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		754D9F261C894E8500A2AEC3 /* validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754D9F251C894E8500A2AEC3 /* validation.swift */; };
 		75AA9D191C8834C600003D4C /* KeychainSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AA9D151C8834C600003D4C /* KeychainSwift.swift */; };
 		75AA9D1A1C8834C600003D4C /* KeychainSwiftAccessOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AA9D161C8834C600003D4C /* KeychainSwiftAccessOptions.swift */; };
 		75AA9D1B1C8834C600003D4C /* TegKeychainConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AA9D171C8834C600003D4C /* TegKeychainConstants.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		754D9F251C894E8500A2AEC3 /* validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = validation.swift; sourceTree = "<group>"; };
 		75AA9D151C8834C600003D4C /* KeychainSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainSwift.swift; sourceTree = "<group>"; };
 		75AA9D161C8834C600003D4C /* KeychainSwiftAccessOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainSwiftAccessOptions.swift; sourceTree = "<group>"; };
 		75AA9D171C8834C600003D4C /* TegKeychainConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegKeychainConstants.swift; sourceTree = "<group>"; };
@@ -69,9 +71,18 @@
 			name = KeyChainSwift;
 			sourceTree = "<group>";
 		};
+		754D9F241C894E6B00A2AEC3 /* Validations */ = {
+			isa = PBXGroup;
+			children = (
+				754D9F251C894E8500A2AEC3 /* validation.swift */,
+			);
+			name = Validations;
+			sourceTree = "<group>";
+		};
 		75B18F821C80534D00AD27B2 = {
 			isa = PBXGroup;
 			children = (
+				754D9F241C894E6B00A2AEC3 /* Validations */,
 				753F1E961C85619A0046A6FD /* KeyChainSwift */,
 				75B18F9B1C80536D00AD27B2 /* Images */,
 				75B18F8D1C80534D00AD27B2 /* TimeApp */,
@@ -198,6 +209,7 @@
 				75B18FB21C80539900AD27B2 /* ForgotPasswordWindow.swift in Sources */,
 				75B18FAE1C80539900AD27B2 /* LoginWindow.swift in Sources */,
 				75AA9D1A1C8834C600003D4C /* KeychainSwiftAccessOptions.swift in Sources */,
+				754D9F261C894E8500A2AEC3 /* validation.swift in Sources */,
 				75B18FB01C80539900AD27B2 /* TimeSheetWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

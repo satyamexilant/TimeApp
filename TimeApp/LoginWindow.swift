@@ -21,7 +21,6 @@ class LoginWindow: NSWindowController
     let createLoginButtonTag = 0
     let loginButtonTag = 1
     
-    
     let keyChain = KeychainSwift()
 
     var timeSheetLayout:TimeSheetWindow? = nil
@@ -35,15 +34,14 @@ class LoginWindow: NSWindowController
             userName.stringValue = storedUsername as String
             loginButton.title = "LogIn"
             loginButton.tag = loginButtonTag
-         }
+        }
         else
         {
              print(" No user Found ")
              loginButton.title = "Create"
              loginButton.tag = createLoginButtonTag
-         }
+        }
     }
-    
     
     override var windowNibName:String
     {
@@ -59,7 +57,6 @@ class LoginWindow: NSWindowController
         userName.stringValue = ""
         loginButton.title = "Create"
         loginButton.tag = createLoginButtonTag
-        //windowDidLoad()
     }
     
     @IBAction func forgotPassword(sender: NSButton)
@@ -70,80 +67,44 @@ class LoginWindow: NSWindowController
         forgotPassword = forgot
     }
     
-    func checkTextSufficientComplexity( text : String) -> Bool{
-        
-        
-        let capitalLetterRegEx  = ".*[A-Z]+.*"
-        let texttest = NSPredicate(format:"SELF MATCHES %@", capitalLetterRegEx)
-        let capitalresult = texttest.evaluateWithObject(text)
-        print("\(capitalresult)")
-        
-        
-        let numberRegEx  = ".*[0-9]+.*"
-        let texttest1 = NSPredicate(format:"SELF MATCHES %@", numberRegEx)
-        let numberresult = texttest1.evaluateWithObject(text)
-        print("\(numberresult)")
-        
-        
-        _  = ".*[!&^%$#@()/]+.*"
-        let texttest2 = NSPredicate(format:"SELF MATCHES %@", numberRegEx)
-        
-        let specialresult = texttest2.evaluateWithObject(text)
-        print("\(specialresult)")
-        
-        return capitalresult && numberresult && specialresult
-        
-    }
-
     
     @IBAction func login(sender: NSButton)
     {
         if sender.tag == loginButtonTag
         {
-            
-                    
-            if (userName.stringValue == "" || password.stringValue == "")
+            if (userName.stringValue != "" && password.stringValue != "")
             {
-                let alert = NSAlert()
-                alert.messageText = "Error"
-                alert.informativeText = "Password Should Notbe Empty"
-                alert.runModal()
-                return
+                if checkLogin(userName.stringValue, password: password.stringValue)
+                {
+                    indicator.startAnimation(true)
+                    sleep(2)
+                    let alert = NSAlert()
+                    alert.messageText = "Success"
+                    alert.informativeText = "Successfully Login"
+                    alert.runModal()
+                    password.stringValue = ""
+                    self.window?.close()
+                    let time = TimeSheetWindow(windowNibName: "TimeSheetWindow")
+                    time.showWindow(self)
+                    timeSheetLayout = time
+                }
+                else
+                {
+                    let alert = NSAlert()
+                    alert.messageText = "Error"
+                    alert.informativeText = "Entered Wrong Password "
+                    password.stringValue = ""
+                    alert.runModal()
+                }
+                
             }
-            
-            if checkLogin(userName.stringValue, password: password.stringValue)
-            {
-                
-                
-                indicator.startAnimation(true)
-                
-                sleep(2)
-                
-//                let alert = NSAlert()
-//                alert.messageText = "Success"
-//                alert.informativeText = "Successfully Login"
-//                alert.runModal()
-                
-                password.stringValue = ""
-                
-                self.window?.close()
-                let time = TimeSheetWindow(windowNibName: "TimeSheetWindow")
-                time.showWindow(self)
-                timeSheetLayout = time
-            }
-            
-            
-                
             else
             {
                 let alert = NSAlert()
                 alert.messageText = "Error"
-                alert.informativeText = "Entered Wrong Password "
-                password.stringValue = ""
+                alert.informativeText = "Password Should not be Empty "
                 alert.runModal()
             }
-            
-    
         }
         else
         {
@@ -152,60 +113,42 @@ class LoginWindow: NSWindowController
                 let alert = NSAlert()
                 alert.messageText = "Error"
                 alert.informativeText = " Creation Failed "
+                alert.informativeText = "All Fields Required"
                 alert.runModal()
                 return
             }
             else
             {
-                
                 let hasKey = NSUserDefaults.standardUserDefaults().boolForKey("hasLoginKey")
                 if hasKey == false
                 {
                     NSUserDefaults.standardUserDefaults().setObject(userName.stringValue, forKey: "username")
                 }
-                
-                
-//                let defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
-//                defaults.setObject(userName.stringValue, forKey: "username")
-//                defaults.setObject(password.stringValue, forKey: "password")
-//                
-                
-                NSUserDefaults.standardUserDefaults().setBool(true, forKey: "hasPassword")
-                NSUserDefaults.standardUserDefaults().synchronize()
-                
                 keyChain.set(password.stringValue, forKey: Keychain_keyName)
-                
-                    if(password.stringValue.characters.count > 7)
-                    {
-                        if(checkTextSufficientComplexity(password.stringValue)){
-                            let alert = NSAlert()
-                            alert.messageText = "Password strong"
-                            alert.runModal()
-                        }
-                        
-
-                let alert1 = NSAlert()
-                alert1.messageText = "Success"
-                alert1.informativeText = "Successfully Created"
-                alert1.runModal()
-                password.stringValue = ""
-                //userName.stringValue = ""
-                //windowDidLoad()
-                loginButton.title = "LogIn"
-                loginButton.tag = loginButtonTag
-                        }
-                    else {
-                        let alert = NSAlert()
-                        alert.messageText = "Password weak"
-                        alert.informativeText = "Password should be of minimum 6 characters. Enter atleast one Uppercase letter , One digit and One special character"
-                        alert.runModal()
-                        password.stringValue = ""
+                if (password.stringValue.characters.count > 6 )
+                {
+                    validate(Validation.ispassword(password))
+                    
+                    let alert = NSAlert()
+                    alert.messageText = "Password strong"
+                    alert.messageText = "Success"
+                    alert.informativeText = "Successfully Created"
+                    alert.runModal()
+                    password.stringValue = ""
+                    
+                    loginButton.title = "LogIn"
+                    loginButton.tag = loginButtonTag
                 }
-                
+                else
+                {
+                    let alert = NSAlert()
+                    alert.messageText = "Password weak"
+                    alert.informativeText = "Password should be of minimum 6 characters,with atleast one Uppercase letter , One digit and One special character"
+                    alert.runModal()
+                    password.stringValue = ""
+                }
             }
-            
         }
-        
     }
 
     func checkLogin(username: String, password: String ) -> Bool
@@ -214,20 +157,29 @@ class LoginWindow: NSWindowController
         {
             return true
         }
-       else
-       {
-         return false
-       }
+        else
+        {
+            return false
+        }
     }
     
-    
+    func validate(validateError:ValidationTimeError)
+    {
+        switch validateError
+        {
+            case .Password:
+                
+                let alert = NSAlert()
+                alert.messageText = "Warning "
+                alert.informativeText = "InvalidPassword "
+                alert.runModal()
+            
+            default:
+                
+                print("Success")
+        }
+    }
 }
-    
-    
-    
+
   
-///////create login/create button by code
-//            let pstyle = NSMutableParagraphStyle()
-//            pstyle.alignment = .CenterTextAlignment
-//            loginButton.attributedTitle = NSAttributedString(string: "Create", attributes: [ NSForegroundColorAttributeName : NSColor.blackColor(), NSParagraphStyleAttributeName : pstyle ])
-//
+
