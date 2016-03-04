@@ -7,7 +7,6 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="TimeSheetWindow" customModule="TimeApp" customModuleProvider="target">
             <connections>
-                <outlet property="combobox" destination="cvv-OZ-XZs" id="Xba-HZ-ugg"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -26,30 +25,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="493" height="245"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="Sheet" id="P8W-Da-vyG"/>
                     </imageView>
-                    <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cvv-OZ-XZs">
-                        <rect key="frame" x="418" y="249" width="72" height="26"/>
-                        <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Satyam" drawsBackground="YES" buttonBordered="NO" completes="NO" numberOfVisibleItems="5" id="v0U-Oo-Kxf">
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vvp-XL-XFC">
+                        <rect key="frame" x="408" y="249" width="83" height="32"/>
+                        <buttonCell key="cell" type="push" title="Logout" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9Tj-YA-Qzq">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
-                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                            <objectValues>
-                                <string>FAQ</string>
-                                <string>Preferences</string>
-                                <string>Feedback</string>
-                                <string>Close</string>
-                                <string>Logout</string>
-                            </objectValues>
-                        </comboBoxCell>
+                        </buttonCell>
                         <connections>
-                            <action selector="comboBox:" target="-2" id="V6S-NL-Rjl"/>
+                            <action selector="logout:" target="-2" id="7PZ-gD-Nrh"/>
                         </connections>
-                    </comboBox>
+                    </button>
                 </subviews>
             </view>
             <connections>
                 <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
             </connections>
-            <point key="canvasLocation" x="517.5" y="355.5"/>
+            <point key="canvasLocation" x="421.5" y="335.5"/>
         </window>
     </objects>
     <resources>

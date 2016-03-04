@@ -77,7 +77,9 @@ class LoginWindow: NSWindowController
                 if checkLogin(userName.stringValue, password: password.stringValue)
                 {
                     indicator.startAnimation(true)
+                    
                     sleep(2)
+                    
                     let alert = NSAlert()
                     alert.messageText = "Success"
                     alert.informativeText = "Successfully Login"
@@ -130,7 +132,6 @@ class LoginWindow: NSWindowController
                     validate(Validation.ispassword(password))
                     
                     let alert = NSAlert()
-                    alert.messageText = "Password strong"
                     alert.messageText = "Success"
                     alert.informativeText = "Successfully Created"
                     alert.runModal()
