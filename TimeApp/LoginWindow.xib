@@ -48,16 +48,6 @@
                             </allowedInputSourceLocales>
                         </secureTextFieldCell>
                     </secureTextField>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RS8-OC-LWe">
-                        <rect key="frame" x="278" y="148" width="47" height="19"/>
-                        <buttonCell key="cell" type="recessed" title="Login" bezelStyle="recessed" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="agC-dD-emg">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="login:" target="-2" id="WGm-Qx-nuC"/>
-                        </connections>
-                    </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3RV-Ky-vFK">
                         <rect key="frame" x="382" y="22" width="49" height="19"/>
                         <buttonCell key="cell" type="recessed" title="Reset" bezelStyle="recessed" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="k7T-VN-ajJ">
@@ -89,6 +79,16 @@
                     <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="jzY-8t-Aca">
                         <rect key="frame" x="293" y="113" width="16" height="16"/>
                     </progressIndicator>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RS8-OC-LWe">
+                        <rect key="frame" x="253" y="148" width="96" height="19"/>
+                        <buttonCell key="cell" type="recessed" title="Login" bezelStyle="recessed" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="agC-dD-emg">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="login:" target="-2" id="WGm-Qx-nuC"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
             <connections>
