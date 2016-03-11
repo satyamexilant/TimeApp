@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7518977A1C92F90D00CA516B /* TimeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751897791C92F90D00CA516B /* TimeTableView.swift */; };
+		7518977C1C92F91900CA516B /* TimeTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7518977B1C92F91900CA516B /* TimeTableView.xib */; };
 		754D9F261C894E8500A2AEC3 /* validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754D9F251C894E8500A2AEC3 /* validation.swift */; };
 		75AA9D191C8834C600003D4C /* KeychainSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AA9D151C8834C600003D4C /* KeychainSwift.swift */; };
 		75AA9D1A1C8834C600003D4C /* KeychainSwiftAccessOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AA9D161C8834C600003D4C /* KeychainSwiftAccessOptions.swift */; };
@@ -19,14 +21,14 @@
 		75B18FA71C80537F00AD27B2 /* gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 75B18FA11C80537F00AD27B2 /* gray.png */; };
 		75B18FAE1C80539900AD27B2 /* LoginWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B18FA81C80539900AD27B2 /* LoginWindow.swift */; };
 		75B18FAF1C80539900AD27B2 /* LoginWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75B18FA91C80539900AD27B2 /* LoginWindow.xib */; };
-		75B18FB01C80539900AD27B2 /* TimeSheetWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B18FAA1C80539900AD27B2 /* TimeSheetWindow.swift */; };
-		75B18FB11C80539900AD27B2 /* TimeSheetWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75B18FAB1C80539900AD27B2 /* TimeSheetWindow.xib */; };
 		75B18FB21C80539900AD27B2 /* ForgotPasswordWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B18FAC1C80539900AD27B2 /* ForgotPasswordWindow.swift */; };
 		75B18FB31C80539900AD27B2 /* ForgotPasswordWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75B18FAD1C80539900AD27B2 /* ForgotPasswordWindow.xib */; };
 		75B18FB51C80540300AD27B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B18FB41C80540300AD27B2 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		751897791C92F90D00CA516B /* TimeTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableView.swift; sourceTree = "<group>"; };
+		7518977B1C92F91900CA516B /* TimeTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeTableView.xib; sourceTree = "<group>"; };
 		754D9F251C894E8500A2AEC3 /* validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = validation.swift; sourceTree = "<group>"; };
 		75AA9D151C8834C600003D4C /* KeychainSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainSwift.swift; sourceTree = "<group>"; };
 		75AA9D161C8834C600003D4C /* KeychainSwiftAccessOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainSwiftAccessOptions.swift; sourceTree = "<group>"; };
@@ -42,8 +44,6 @@
 		75B18FA11C80537F00AD27B2 /* gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gray.png; sourceTree = "<group>"; };
 		75B18FA81C80539900AD27B2 /* LoginWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWindow.swift; sourceTree = "<group>"; };
 		75B18FA91C80539900AD27B2 /* LoginWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginWindow.xib; sourceTree = "<group>"; };
-		75B18FAA1C80539900AD27B2 /* TimeSheetWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSheetWindow.swift; sourceTree = "<group>"; };
-		75B18FAB1C80539900AD27B2 /* TimeSheetWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeSheetWindow.xib; sourceTree = "<group>"; };
 		75B18FAC1C80539900AD27B2 /* ForgotPasswordWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordWindow.swift; sourceTree = "<group>"; };
 		75B18FAD1C80539900AD27B2 /* ForgotPasswordWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgotPasswordWindow.xib; sourceTree = "<group>"; };
 		75B18FB41C80540300AD27B2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,10 +104,10 @@
 				75B18FB41C80540300AD27B2 /* AppDelegate.swift */,
 				75B18FA81C80539900AD27B2 /* LoginWindow.swift */,
 				75B18FA91C80539900AD27B2 /* LoginWindow.xib */,
-				75B18FAA1C80539900AD27B2 /* TimeSheetWindow.swift */,
-				75B18FAB1C80539900AD27B2 /* TimeSheetWindow.xib */,
 				75B18FAC1C80539900AD27B2 /* ForgotPasswordWindow.swift */,
 				75B18FAD1C80539900AD27B2 /* ForgotPasswordWindow.xib */,
+				751897791C92F90D00CA516B /* TimeTableView.swift */,
+				7518977B1C92F91900CA516B /* TimeTableView.xib */,
 				75B18F901C80534D00AD27B2 /* Assets.xcassets */,
 				75B18F921C80534D00AD27B2 /* MainMenu.xib */,
 				75B18F951C80534D00AD27B2 /* Info.plist */,
@@ -184,7 +184,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75B18FB11C80539900AD27B2 /* TimeSheetWindow.xib in Resources */,
 				75B18FA31C80537F00AD27B2 /* gray1.png in Resources */,
 				75B18FAF1C80539900AD27B2 /* LoginWindow.xib in Resources */,
 				75B18F911C80534D00AD27B2 /* Assets.xcassets in Resources */,
@@ -193,6 +192,7 @@
 				75B18FB31C80539900AD27B2 /* ForgotPasswordWindow.xib in Resources */,
 				75B18FA51C80537F00AD27B2 /* white.png in Resources */,
 				75B18FA71C80537F00AD27B2 /* gray.png in Resources */,
+				7518977C1C92F91900CA516B /* TimeTableView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7518977A1C92F90D00CA516B /* TimeTableView.swift in Sources */,
 				75AA9D1B1C8834C600003D4C /* TegKeychainConstants.swift in Sources */,
 				75AA9D191C8834C600003D4C /* KeychainSwift.swift in Sources */,
 				75B18FB51C80540300AD27B2 /* AppDelegate.swift in Sources */,
@@ -210,7 +211,6 @@
 				75B18FAE1C80539900AD27B2 /* LoginWindow.swift in Sources */,
 				75AA9D1A1C8834C600003D4C /* KeychainSwiftAccessOptions.swift in Sources */,
 				754D9F261C894E8500A2AEC3 /* validation.swift in Sources */,
-				75B18FB01C80539900AD27B2 /* TimeSheetWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,9 +23,9 @@ class LoginWindow: NSWindowController
     
     let keyChain = KeychainSwift()
 
-    var timeSheetLayout:TimeSheetWindow? = nil
-    var forgotPassword:ForgotPasswordWindow? = nil
     
+    var forgotPassword:ForgotPasswordWindow? = nil
+     var timeTableView: TimeTableView? 
     override func windowDidLoad()
     {
         super.windowDidLoad()
@@ -86,9 +86,10 @@ class LoginWindow: NSWindowController
                     alert.runModal()
                     password.stringValue = ""
                     self.window?.close()
-                    let time = TimeSheetWindow(windowNibName: "TimeSheetWindow")
-                    time.showWindow(self)
-                    timeSheetLayout = time
+                    
+                    let timeTableView = TimeTableView()
+                    self.timeTableView = timeTableView
+                    timeTableView.window!.acceptsMouseMovedEvents = true
                 }
                 else
                 {
