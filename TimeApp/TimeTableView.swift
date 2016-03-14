@@ -162,6 +162,7 @@
     }
 
 //--------------------------------------------------------------------
+//---------- calender display @satyam --------------------------------
 //--------------------------------------------------------------------
 
     @IBOutlet var calender: NSButton!
@@ -175,11 +176,13 @@
         }
         else
         {
-            popover.showRelativeToRect(calender.bounds, ofView: calender, preferredEdge: NSRectEdge.MinY)
+            popover.showRelativeToRect(calender.bounds, ofView: calender, preferredEdge: NSRectEdge.MaxY)
             eventMonitor?.start()
         }
     }
-    
+//--------------------------------------------------------------------
+//--------------------------------------------------------------------
+
     func drawDragView(){
             if location.x >= 105
             {
