@@ -324,7 +324,7 @@
                                             </connections>
                                         </tableColumn>
                                         <tableColumn identifier="1" width="102" minWidth="40" maxWidth="1000" id="Uk5-JN-2hd">
-                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="sun">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
