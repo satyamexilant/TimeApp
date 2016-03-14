@@ -7,6 +7,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="TimeTableView" customModule="TimeApp" customModuleProvider="target">
             <connections>
+                <outlet property="calender" destination="wEm-6d-pO7" id="LYn-F7-veJ"/>
                 <outlet property="label" destination="3qc-aJ-rcV" id="jQt-cp-eUp"/>
                 <outlet property="myTableView" destination="HSE-oD-Qz0" id="1iL-Um-EJt"/>
                 <outlet property="myWindow" destination="F0z-JX-Cv5" id="ZLZ-OD-VqF"/>
@@ -173,7 +174,7 @@
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="calender:" target="-2" id="OMu-Iy-43f"/>
+                            <action selector="calender:" target="-2" id="wi6-3v-q1i"/>
                         </connections>
                     </button>
                     <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7tf-Cq-Rc5">

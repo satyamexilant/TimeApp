@@ -11,6 +11,8 @@
  class TimeTableView: NSWindowController
  {
    
+    let popover = NSPopover()
+    var eventMonitor : EventMonitor?
     
     @IBOutlet var myWindow: NSWindow!
     
@@ -162,6 +164,22 @@
 //--------------------------------------------------------------------
 //--------------------------------------------------------------------
 
+    @IBOutlet var calender: NSButton!
+    
+    @IBAction func calender(sender: NSButton)
+    {
+        popover.contentViewController = Calender(nibName: "Calender", bundle: nil)
+        if popover.shown{
+            popover.performClose(sender)
+            eventMonitor?.stop()
+        }
+        else
+        {
+            popover.showRelativeToRect(calender.bounds, ofView: calender, preferredEdge: NSRectEdge.MinY)
+            eventMonitor?.start()
+        }
+    }
+    
     func drawDragView(){
             if location.x >= 105
             {
