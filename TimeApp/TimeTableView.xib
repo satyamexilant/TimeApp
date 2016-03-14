@@ -169,7 +169,7 @@
                     </textField>
                     <button wantsLayer="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wEm-6d-pO7">
                         <rect key="frame" x="795" y="541" width="46" height="32"/>
-                        <buttonCell key="cell" type="push" bezelStyle="rounded" image="calender 3.30.54 PM" imagePosition="overlaps" alignment="center" refusesFirstResponder="YES" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ipp-eO-Ix1">
+                        <buttonCell key="cell" type="push" bezelStyle="rounded" image="calendar-icon" imagePosition="only" alignment="center" refusesFirstResponder="YES" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ipp-eO-Ix1">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES" accelerator="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -648,6 +648,6 @@
         <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="KpZ-gA-k2W"/>
     </objects>
     <resources>
-        <image name="calender 3.30.54 PM" width="204" height="196"/>
+        <image name="calendar-icon" width="19.200000762939453" height="19.200000762939453"/>
     </resources>
 </document>

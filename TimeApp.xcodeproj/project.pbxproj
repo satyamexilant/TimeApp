@@ -13,15 +13,12 @@
 		75968C541C96C92900D99009 /* Calender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75968C521C96C92900D99009 /* Calender.swift */; };
 		75968C551C96C92900D99009 /* Calender.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75968C531C96C92900D99009 /* Calender.xib */; };
 		75968C591C96C9B800D99009 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75968C581C96C9B800D99009 /* EventMonitor.swift */; };
+		75968C5B1C96CE8100D99009 /* calendar-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 75968C5A1C96CE8100D99009 /* calendar-icon.png */; };
 		75AA9D191C8834C600003D4C /* KeychainSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AA9D151C8834C600003D4C /* KeychainSwift.swift */; };
 		75AA9D1A1C8834C600003D4C /* KeychainSwiftAccessOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AA9D161C8834C600003D4C /* KeychainSwiftAccessOptions.swift */; };
 		75AA9D1B1C8834C600003D4C /* TegKeychainConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AA9D171C8834C600003D4C /* TegKeychainConstants.swift */; };
 		75B18F911C80534D00AD27B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75B18F901C80534D00AD27B2 /* Assets.xcassets */; };
 		75B18F941C80534D00AD27B2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75B18F921C80534D00AD27B2 /* MainMenu.xib */; };
-		75B18FA21C80537F00AD27B2 /* Sheet.png in Resources */ = {isa = PBXBuildFile; fileRef = 75B18F9C1C80537F00AD27B2 /* Sheet.png */; };
-		75B18FA31C80537F00AD27B2 /* gray1.png in Resources */ = {isa = PBXBuildFile; fileRef = 75B18F9D1C80537F00AD27B2 /* gray1.png */; };
-		75B18FA51C80537F00AD27B2 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = 75B18F9F1C80537F00AD27B2 /* white.png */; };
-		75B18FA71C80537F00AD27B2 /* gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 75B18FA11C80537F00AD27B2 /* gray.png */; };
 		75B18FAE1C80539900AD27B2 /* LoginWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B18FA81C80539900AD27B2 /* LoginWindow.swift */; };
 		75B18FAF1C80539900AD27B2 /* LoginWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75B18FA91C80539900AD27B2 /* LoginWindow.xib */; };
 		75B18FB21C80539900AD27B2 /* ForgotPasswordWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B18FAC1C80539900AD27B2 /* ForgotPasswordWindow.swift */; };
@@ -36,6 +33,7 @@
 		75968C521C96C92900D99009 /* Calender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calender.swift; sourceTree = "<group>"; };
 		75968C531C96C92900D99009 /* Calender.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Calender.xib; sourceTree = "<group>"; };
 		75968C581C96C9B800D99009 /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		75968C5A1C96CE8100D99009 /* calendar-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar-icon.png"; sourceTree = "<group>"; };
 		75AA9D151C8834C600003D4C /* KeychainSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainSwift.swift; sourceTree = "<group>"; };
 		75AA9D161C8834C600003D4C /* KeychainSwiftAccessOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainSwiftAccessOptions.swift; sourceTree = "<group>"; };
 		75AA9D171C8834C600003D4C /* TegKeychainConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TegKeychainConstants.swift; sourceTree = "<group>"; };
@@ -44,10 +42,6 @@
 		75B18F901C80534D00AD27B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75B18F931C80534D00AD27B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		75B18F951C80534D00AD27B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		75B18F9C1C80537F00AD27B2 /* Sheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sheet.png; sourceTree = "<group>"; };
-		75B18F9D1C80537F00AD27B2 /* gray1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gray1.png; sourceTree = "<group>"; };
-		75B18F9F1C80537F00AD27B2 /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
-		75B18FA11C80537F00AD27B2 /* gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gray.png; sourceTree = "<group>"; };
 		75B18FA81C80539900AD27B2 /* LoginWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWindow.swift; sourceTree = "<group>"; };
 		75B18FA91C80539900AD27B2 /* LoginWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginWindow.xib; sourceTree = "<group>"; };
 		75B18FAC1C80539900AD27B2 /* ForgotPasswordWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordWindow.swift; sourceTree = "<group>"; };
@@ -135,10 +129,7 @@
 		75B18F9B1C80536D00AD27B2 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				75B18F9C1C80537F00AD27B2 /* Sheet.png */,
-				75B18F9D1C80537F00AD27B2 /* gray1.png */,
-				75B18F9F1C80537F00AD27B2 /* white.png */,
-				75B18FA11C80537F00AD27B2 /* gray.png */,
+				75968C5A1C96CE8100D99009 /* calendar-icon.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -201,15 +192,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75B18FA31C80537F00AD27B2 /* gray1.png in Resources */,
 				75B18FAF1C80539900AD27B2 /* LoginWindow.xib in Resources */,
+				75968C5B1C96CE8100D99009 /* calendar-icon.png in Resources */,
 				75B18F911C80534D00AD27B2 /* Assets.xcassets in Resources */,
 				75B18F941C80534D00AD27B2 /* MainMenu.xib in Resources */,
-				75B18FA21C80537F00AD27B2 /* Sheet.png in Resources */,
 				75968C551C96C92900D99009 /* Calender.xib in Resources */,
 				75B18FB31C80539900AD27B2 /* ForgotPasswordWindow.xib in Resources */,
-				75B18FA51C80537F00AD27B2 /* white.png in Resources */,
-				75B18FA71C80537F00AD27B2 /* gray.png in Resources */,
 				7518977C1C92F91900CA516B /* TimeTableView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
