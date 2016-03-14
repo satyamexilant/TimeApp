@@ -27,7 +27,7 @@
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lu4-4O-mwd">
-                        <rect key="frame" x="1156" y="624" width="83" height="32"/>
+                        <rect key="frame" x="1151" y="624" width="83" height="32"/>
                         <buttonCell key="cell" type="push" title="Logout" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="v89-e3-ZmU">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -62,7 +62,7 @@
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SUn-ls-EDk">
-                        <rect key="frame" x="1079" y="534" width="83" height="32"/>
+                        <rect key="frame" x="1049" y="537" width="107" height="32"/>
                         <buttonCell key="cell" type="push" title="Submit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Bvy-Wq-71V">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -83,7 +83,7 @@
                         </connections>
                     </textField>
                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xYG-Tf-fr4">
-                        <rect key="frame" x="269" y="43" width="904" height="542"/>
+                        <rect key="frame" x="215" y="68" width="960" height="513"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" id="1XT-iq-AuH"/>
                     </imageView>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2kK-go-Gdc">
@@ -260,11 +260,11 @@
                         </textFieldCell>
                     </textField>
                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Trt-Gq-I6g">
-                        <rect key="frame" x="17" y="26" width="1228" height="644"/>
+                        <rect key="frame" x="36" y="61" width="1200" height="605"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" id="m9A-mt-4W5"/>
                     </imageView>
                     <scrollView autoresizesSubviews="NO" fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="101" horizontalPageScroll="10" verticalLineScroll="101" verticalPageScroll="10" translatesAutoresizingMaskIntoConstraints="NO" id="Yr9-9P-59V">
-                        <rect key="frame" x="321" y="93" width="835" height="428"/>
+                        <rect key="frame" x="315" y="110" width="835" height="428"/>
                         <clipView key="contentView" ambiguous="YES" id="TLI-Tm-4At">
                             <rect key="frame" x="1" y="0.0" width="833" height="427"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
