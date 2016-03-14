@@ -67,34 +67,8 @@ class LoginWindow: NSWindowController
         forgotPassword = forgot
     }
     
-<<<<<<< Updated upstream
-=======
-    func checkTextSufficientComplexity( text : String) -> Bool{
-        
-        
-        let capitalLetterRegEx  = ".*[A-Z]+.*"
-        let texttest = NSPredicate(format:"SELF MATCHES %@", capitalLetterRegEx)
-        let capitalresult = texttest.evaluateWithObject(text)
-        print("\(capitalresult)")
-        
-        
-        let numberRegEx  = ".*[0-9]+.*"
-        let texttest1 = NSPredicate(format:"SELF MATCHES %@", numberRegEx)
-        let numberresult = texttest1.evaluateWithObject(text)
-        print("\(numberresult)")
-        
-        
-        let specialCharacterRegEx  = ".*[!&^%$#@()/]+.*"
-        let texttest2 = NSPredicate(format:"SELF MATCHES %@", numberRegEx)
-        
-        let specialresult = texttest2.evaluateWithObject(text)
-        print("\(specialresult)")
-        
-        return capitalresult && numberresult && specialresult
-        
-    }
 
->>>>>>> Stashed changes
+    
     
     @IBAction func login(sender: NSButton)
     {
@@ -155,7 +129,7 @@ class LoginWindow: NSWindowController
                 {
                     NSUserDefaults.standardUserDefaults().setObject(userName.stringValue, forKey: "username")
                 }
-<<<<<<< Updated upstream
+
                 keyChain.set(password.stringValue, forKey: Keychain_keyName)
                 if (password.stringValue.characters.count > 6 )
                 {
@@ -177,53 +151,16 @@ class LoginWindow: NSWindowController
                     alert.informativeText = "Password should be of minimum 6 characters,with atleast one Uppercase letter , One digit and One special character"
                     alert.runModal()
                     password.stringValue = ""
-=======
+
                 
                 // let alert = NSAlert()
 //                alert.messageText =
-            
-                
-                let defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
-                defaults.setObject(userName.stringValue, forKey: "username")
-                defaults.setObject(password.stringValue, forKey: "password")
-                
-                
-                NSUserDefaults.standardUserDefaults().setBool(true, forKey: "hasPassword")
-                NSUserDefaults.standardUserDefaults().synchronize()
-                
-                keyChain.set(password.stringValue, forKey: Keychain_keyName)
-                
-                    if(password.stringValue.characters.count > 7)
-                    {
-                        if(checkTextSufficientComplexity(password.stringValue)){
-                            let alert = NSAlert()
-                            alert.messageText = "Password strong"
-                            alert.runModal()
-                        }
-                        
-
-                let alert1 = NSAlert()
-                alert1.messageText = "Success"
-                alert1.informativeText = "Successfully Created"
-                alert1.runModal()
-                password.stringValue = ""
-                //userName.stringValue = ""
-                //windowDidLoad()
-                loginButton.title = "LogIn"
-                loginButton.tag = loginButtonTag
-                        }
-                    else {
-                        let alert = NSAlert()
-                        alert.messageText = "Password weak"
-                        alert.informativeText = "Password should be of minimum 6 characters. Enter atleast one Uppercase letter , One digit and One special character"
-                        alert.runModal()
-                         password.stringValue = ""
->>>>>>> Stashed changes
                 }
             }
         }
     }
-
+    
+               
     func checkLogin(username: String, password: String ) -> Bool
     {
         if (password == keyChain.get (Keychain_keyName)) && username == (NSUserDefaults.standardUserDefaults().valueForKey("username") as? String)!
@@ -254,5 +191,4 @@ class LoginWindow: NSWindowController
     }
 }
 
-  
 
