@@ -8,6 +8,7 @@
         <customObject id="-2" userLabel="File's Owner" customClass="Calender" customModule="TimeApp" customModuleProvider="target">
             <connections>
                 <outlet property="calender" destination="Crk-fv-9us" id="5jh-WF-h1Y"/>
+                <outlet property="today" destination="vwj-D4-yvT" id="b7e-He-wbw"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -29,8 +30,25 @@
                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                     </datePickerCell>
                 </datePicker>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ung-Og-tub">
+                    <rect key="frame" x="125" y="182" width="23" height="19"/>
+                    <buttonCell key="cell" type="recessed" title="X" bezelStyle="recessed" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ryT-YY-GHQ">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                        <font key="font" metaFont="systemBold" size="12"/>
+                    </buttonCell>
+                </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vwj-D4-yvT">
+                    <rect key="frame" x="9" y="182" width="56" height="19"/>
+                    <buttonCell key="cell" type="recessed" title="Today" bezelStyle="recessed" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="HDt-Ca-jtN">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                        <font key="font" metaFont="systemBold" size="12"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="today:" target="-2" id="VFX-ge-fx6"/>
+                    </connections>
+                </button>
             </subviews>
-            <point key="canvasLocation" x="460" y="292.5"/>
+            <point key="canvasLocation" x="159" y="178.5"/>
         </customView>
     </objects>
 </document>
