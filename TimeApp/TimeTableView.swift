@@ -15,9 +15,12 @@
     @IBOutlet var myWindow: NSWindow!
     
     var login:LoginWindow?
-   
+    let submitButtonTag = 0
+    let withdrawButtonTag = 1
     
     @IBOutlet weak var scrollView: NSScrollView!
+    @IBOutlet var submitButton: NSButton!
+    
     var mouseLocation: NSPoint
     {
         return NSEvent.mouseLocation()
@@ -314,6 +317,21 @@
         window?.close()
     }
     
+    @IBAction func submit(sender: NSButton)
+    {
+        if sender.tag == submitButtonTag
+        {
+            let alert = NSAlert()
+            alert.messageText = "Done"
+            alert.informativeText = "Weekly Report submitted successfully"
+            alert.runModal()
+            
+            sender.tag == 1
+            submitButton.title = "Withdraw"
+            submitButton.tag = withdrawButtonTag
+        }
+
+    }
     
     
     

@@ -11,6 +11,7 @@
                 <outlet property="myTableView" destination="HSE-oD-Qz0" id="1iL-Um-EJt"/>
                 <outlet property="myWindow" destination="F0z-JX-Cv5" id="ZLZ-OD-VqF"/>
                 <outlet property="scrollView" destination="Yr9-9P-59V" id="1vk-pV-mJk"/>
+                <outlet property="submitButton" destination="SUn-ls-EDk" id="bWa-xZ-3TP"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="RqH-Kh-hwT"/>
             </connections>
         </customObject>
@@ -66,6 +67,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="submit:" target="-2" id="F19-Bh-gjs"/>
+                        </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3qc-aJ-rcV">
                         <rect key="frame" x="1041" y="633" width="97" height="17"/>

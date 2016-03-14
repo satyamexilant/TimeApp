@@ -18,7 +18,7 @@ class LoginWindow: NSWindowController
     @IBOutlet var indicator: NSProgressIndicator!
     
     
-    let createLoginButtonTag = 0
+    let createButtonTag = 0
     let loginButtonTag = 1
     
     let keyChain = KeychainSwift()
@@ -39,7 +39,7 @@ class LoginWindow: NSWindowController
         {
              print(" No user Found ")
              loginButton.title = "Create"
-             loginButton.tag = createLoginButtonTag
+             loginButton.tag = createButtonTag
         }
     }
     
@@ -56,7 +56,7 @@ class LoginWindow: NSWindowController
         password.stringValue = ""
         userName.stringValue = ""
         loginButton.title = "Create"
-        loginButton.tag = createLoginButtonTag
+        loginButton.tag = createButtonTag
     }
     
     @IBAction func forgotPassword(sender: NSButton)
