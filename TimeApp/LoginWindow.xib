@@ -99,11 +99,8 @@
         <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="MXW-FM-lt0">
             <rect key="frame" x="0.0" y="0.0" width="387" height="195"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="gray1" id="HJQ-Bb-cMH"/>
+            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" id="HJQ-Bb-cMH"/>
             <point key="canvasLocation" x="179.5" y="349.5"/>
         </imageView>
     </objects>
-    <resources>
-        <image name="gray1" width="598" height="240"/>
-    </resources>
 </document>
