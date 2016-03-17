@@ -17,6 +17,9 @@ class LoginWindow: NSWindowController
     @IBOutlet var loginButton: NSButton!
     @IBOutlet var indicator: NSProgressIndicator!
     
+    @IBOutlet var forgotPasswordButton: NSButton!
+    @IBOutlet var separator: NSTextField!
+    @IBOutlet var resetButton: NSButton!
     
     let createButtonTag = 0
     let loginButtonTag = 1
@@ -25,7 +28,7 @@ class LoginWindow: NSWindowController
 
     
     var forgotPassword:ForgotPasswordWindow? = nil
-     var timeTableView: TimeTableView? 
+     var timeTableView: TimeTableView?
     override func windowDidLoad()
     {
         super.windowDidLoad()
@@ -37,6 +40,11 @@ class LoginWindow: NSWindowController
         }
         else
         {
+            
+            resetButton.hidden = true
+            forgotPasswordButton.hidden = true
+            separator.hidden = true
+
              print(" No user Found ")
              loginButton.title = "Create"
              loginButton.tag = createButtonTag
@@ -57,6 +65,12 @@ class LoginWindow: NSWindowController
         userName.stringValue = ""
         loginButton.title = "Create"
         loginButton.tag = createButtonTag
+        
+        
+        resetButton.hidden = true
+        forgotPasswordButton.hidden = true
+        separator.hidden = true
+
     }
     
     @IBAction func forgotPassword(sender: NSButton)
@@ -140,6 +154,12 @@ class LoginWindow: NSWindowController
                     alert.informativeText = "Successfully Created"
                     alert.runModal()
                     password.stringValue = ""
+                    
+                    resetButton.hidden = false
+                    forgotPasswordButton.hidden = false
+                    separator.hidden = false
+                    
+
                     
                     loginButton.title = "LogIn"
                     loginButton.tag = loginButtonTag

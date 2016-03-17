@@ -8,10 +8,14 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="LoginWindow" customModule="TimeApp" customModuleProvider="target">
             <connections>
+                <outlet property="forgorPasswordButton" destination="lfX-fe-OjZ" id="B7W-Yg-q5e"/>
+                <outlet property="forgotPasswordButton" destination="lfX-fe-OjZ" id="iRz-05-dSZ"/>
                 <outlet property="indicator" destination="jzY-8t-Aca" id="SyL-Pp-Ke7"/>
                 <outlet property="loginButton" destination="RS8-OC-LWe" id="7Ib-jx-OVq"/>
                 <outlet property="password" destination="eqE-Li-PmM" id="ssC-5U-veV"/>
                 <outlet property="reset" destination="3RV-Ky-vFK" id="NCw-bD-2Iu"/>
+                <outlet property="resetButton" destination="3RV-Ky-vFK" id="pLF-au-AyR"/>
+                <outlet property="separator" destination="tO3-vr-nnT" id="Iy2-Vh-JlX"/>
                 <outlet property="userName" destination="BcD-eD-Fgh" id="e3T-9o-u8L"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
             </connections>
