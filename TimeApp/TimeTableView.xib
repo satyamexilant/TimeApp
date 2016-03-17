@@ -453,7 +453,7 @@
                                                 </tableCellView>
                                             </prototypeCellViews>
                                         </tableColumn>
-                                        <tableColumn identifier="2" width="102" minWidth="10" maxWidth="3.4028234663852886e+38" id="rBm-1l-97Y">
+                                        <tableColumn identifier="" width="102" minWidth="10" maxWidth="3.4028234663852886e+38" id="rBm-1l-97Y">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Wed">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -466,7 +466,7 @@
                                             </textFieldCell>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                             <prototypeCellViews>
-                                                <tableCellView identifier="2" id="kcz-dl-Rwq">
+                                                <tableCellView id="kcz-dl-Rwq">
                                                     <rect key="frame" x="417" y="0.0" width="102" height="101"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
@@ -492,7 +492,7 @@
                                                 </tableCellView>
                                             </prototypeCellViews>
                                         </tableColumn>
-                                        <tableColumn identifier="" width="102" minWidth="10" maxWidth="3.4028234663852886e+38" id="Fgi-xZ-jFp">
+                                        <tableColumn identifier="2" width="102" minWidth="10" maxWidth="3.4028234663852886e+38" id="Fgi-xZ-jFp">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Thru">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -505,7 +505,7 @@
                                             </textFieldCell>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                             <prototypeCellViews>
-                                                <tableCellView id="ZOR-kW-VXq">
+                                                <tableCellView identifier="2" id="ZOR-kW-VXq">
                                                     <rect key="frame" x="521" y="0.0" width="102" height="101"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
