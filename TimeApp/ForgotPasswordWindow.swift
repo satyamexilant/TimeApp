@@ -20,6 +20,12 @@ class ForgotPasswordWindow: NSWindowController
 
     }
     
+    @IBAction func cancle(sender: NSButton)
+    {
+        let loginWindow = LoginWindow()
+        loginWindow.showWindow(self)
+        self.login = loginWindow
+    }
     @IBAction func submit(sender: NSButton)
     {
         if userNameInForgot.stringValue != ""
