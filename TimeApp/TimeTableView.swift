@@ -140,21 +140,21 @@
         if tableColumn?.identifier == "1"
         {
             view.wantsLayer = true
-            // view.layer?.backgroundColor = NSColor.brownColor().CGColor
-            view.layer?.backgroundColor = NSColor(hue: 0.1, saturation: 0.2, brightness: 2.3, alpha: 3.0).CGColor
+             view.layer?.backgroundColor = NSColor.brownColor().CGColor
+          //  view.layer?.backgroundColor = NSColor(hue: 0.1, saturation: 0.2, brightness: 2.3, alpha: 3.0).CGColor
         }
         
         if tableColumn?.identifier == "2"
         {
             view.wantsLayer = true
-            //view.layer?.backgroundColor = NSColor.yellowColor().CGColor
-            view.layer?.backgroundColor = NSColor(hue: 0.2, saturation: 0.1, brightness: 2.3, alpha: 3.0).CGColor
+            view.layer?.backgroundColor = NSColor.yellowColor().CGColor
+            //view.layer?.backgroundColor = NSColor(hue: 0.2, saturation: 0.1, brightness: 2.3, alpha: 3.0).CGColor
         }
         if tableColumn?.identifier == "3"
         {
             view.wantsLayer = true
-            // view.layer?.backgroundColor = NSColor.purpleColor().CGColor
-            view.layer?.backgroundColor = NSColor(hue: 0.6, saturation: 0.1, brightness: 2.3, alpha: 3.0).CGColor
+             view.layer?.backgroundColor = NSColor.purpleColor().CGColor
+           // view.layer?.backgroundColor = NSColor(hue: 0.6, saturation: 0.1, brightness: 2.3, alpha: 3.0).CGColor
         }
         
         
@@ -219,7 +219,7 @@
                     
                 }
                 scrollTableView()
-                scrollVar++
+                scrollVar += 1
                 
             }
         }
@@ -291,7 +291,7 @@
         myButton!.frame = NSMakeRect((layerOnA?.bounds.width)!-20,(layerOnA?.bounds.height)!-25,20,25)
         
         myButton!.title = "✖︎"
-        myButton!.action = Selector("buttonPressed:")
+        myButton!.action = #selector(TimeTableView.buttonPressed(_:))
         myButton!.target = self
         
         layerOnA!.addSubview(myButton!)
