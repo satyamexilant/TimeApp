@@ -31,5 +31,7 @@ public class EventMonitor {
             NSEvent.removeMonitor(monitor!)
             monitor = nil
         }
+        
+        //hai
     }
 }
